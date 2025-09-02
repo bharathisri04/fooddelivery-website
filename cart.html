@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - FoodieExpress</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cartstyle.css" />
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Your Cart</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main class="cart-container">
+    <section class="cart" id="cartItems">
+      <!-- Cart items will be populated here by JavaScript -->
+    </section>
+
+    <div class="cart-actions">
+      <a href="checkout.html" class="btn">Proceed to Checkout</a>
+      <button onclick="confirmOrder()" class="btn danger">Clear Cart</button>
+    </div>
+  </main>
+</body>
+</html>
